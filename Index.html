@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stick Invoice</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap">
+  <link rel="stylesheet" href="Styles/style.css">
+  <script src="Scripts/Script.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <ul>
+            <li><button class="listbutton" onclick="showContent('home')"><i class="fas fa-home"></i><span class="sidebariconnames">Home</span></button></li>
+            <li><button class="listbutton" onclick="showContent('items')"><i class="fa-solid fa-bag-shopping"></i><span class="sidebariconnames">Items</span></button></li>
+            <li><button class="listbutton" onclick="showContent('quotes')"><i class="fa-regular fa-note-sticky"></i><span class="sidebariconnames">Quotes</span></button></li>
+            <li><button class="listbutton" onclick="showContent('deliverychallan')"><i class="fa-solid fa-truck"></i><span class="sidebariconnames">Delivery Challan</span></button></li>
+            <li><button class="listbutton"onclick="showContent('invoice')"><i class="fa-solid fa-file-invoice"></i><span class="sidebariconnames">Invoice</span></button></li>
+        </ul>
+        <div id="sidebarCollapse">
+            <button class="listbutton" onclick="toggleSidebar()"><i class="fas fa-bars"></i><span class="sidebariconnames">Collapse</span></button>
+        </div>
+    </div>
+    <div id="content">
+        <div id="homeContent">This is the Home content.</div>
+        <div id="itemsContent" style="display: none;">This is the items content.</div>
+        <div id="quotesContent" style="display: none;">This is the quotes content.</div>
+        <div id="deliverychallanContent" style="display: none;">This is the delivery challan content.</div>
+        <div id="invoiceContent" style="display: none;">This is the delivery challan content.</div>
+    </div>
+</body>
+</html>
