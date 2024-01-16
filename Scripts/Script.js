@@ -6,6 +6,14 @@ function showContent(contentType) {
     document.getElementById('deliverychallanContent').style.display = 'none';
     document.getElementById('invoiceContent').style.display = 'none';
     document.getElementById(contentType + 'Content').style.display = 'block';
+
+    var buttons = document.querySelectorAll('.listbutton');
+
+    buttons.forEach(function(button) {
+        button.style.background = 'transparent';
+    });
+
+    document.getElementById(contentType).style.background = 'rgb(142, 215, 198)';
 }
 
 function toggleSidebar() {

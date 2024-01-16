@@ -12,11 +12,11 @@
 <body>
     <div id="sidebar">
         <ul>
-            <li><button class="listbutton" onclick="showContent('home')"><i class="fas fa-home"></i><span class="sidebariconnames">Home</span></button></li>
-            <li><button class="listbutton" onclick="showContent('items')"><i class="fa-solid fa-bag-shopping"></i><span class="sidebariconnames">Items</span></button></li>
-            <li><button class="listbutton" onclick="showContent('quotes')"><i class="fa-regular fa-note-sticky"></i><span class="sidebariconnames">Quotes</span></button></li>
-            <li><button class="listbutton" onclick="showContent('deliverychallan')"><i class="fa-solid fa-truck"></i><span class="sidebariconnames">Delivery Challan</span></button></li>
-            <li><button class="listbutton"onclick="showContent('invoice')"><i class="fa-solid fa-file-invoice"></i><span class="sidebariconnames">Invoice</span></button></li>
+            <li><button class="listbutton" id="home" onclick="showContent('home')"><i class="fas fa-home"></i><span class="sidebariconnames">Home</span></button></li>
+            <li><button class="listbutton" id="items" onclick="showContent('items')"><i class="fa-solid fa-bag-shopping"></i><span class="sidebariconnames">Items</span></button></li>
+            <li><button class="listbutton" id="quotes" onclick="showContent('quotes')"><i class="fa-regular fa-note-sticky"></i><span class="sidebariconnames">Quotes</span></button></li>
+            <li><button class="listbutton" id="deliverychallan" onclick="showContent('deliverychallan')"><i class="fa-solid fa-truck"></i><span class="sidebariconnames">Delivery Challan</span></button></li>
+            <li><button class="listbutton" id="invoice" onclick="showContent('invoice')"><i class="fa-solid fa-file-invoice"></i><span class="sidebariconnames">Invoice</span></button></li>
         </ul>
         <div id="sidebarCollapse">
             <button class="listbutton" onclick="toggleSidebar()"><i class="fas fa-bars"></i><span class="sidebariconnames">Collapse</span></button>
